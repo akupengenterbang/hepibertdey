@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101c35" />
+    <meta
+      name="description"
+      content="Sebuah surat kecil dan ucapan ulang tahun untuk Delika."
+    />
+    <title>For Delika — A little letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <main>
+      <section class="scene intro-scene is-active floral-page" id="intro-scene" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span></span> A LETTER FOR YOU <span></span></p>
+          <h1 id="intro-title">Sesuatu kecil,<br /><em>untuk hari ini.</em></h1>
+          <p class="intro-note">Ada surat yang sudah lama ingin kusampaikan.</p>
+        </div>
+
+        <div class="envelope-wrap">
+          <div class="envelope" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter-peek">
+              <span class="letter-mark">for you</span>
+              <span class="letter-lines"></span>
+              <span class="letter-lines short"></span>
+            </div>
+            <div class="envelope-front"></div>
+            <div class="envelope-flap"></div>
+            <div class="tear-seam" aria-hidden="true"></div>
+            <div class="seal" aria-hidden="true"></div>
+          </div>
+          <button class="primary-button tear-button" id="tear-button" type="button">
+            <span>Robek suratnya</span><span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="hint">pelan-pelan, ya</p>
+        </div>
+      </section>
+
+      <section class="scene question-scene floral-page" id="question-scene" aria-labelledby="question-title" hidden>
+        <div class="question-card" id="question-card">
+          <span class="card-sparkle" aria-hidden="true">✦</span>
+          <p class="eyebrow">A LITTLE QUESTION</p>
+          <h2 id="question-title" tabindex="-1">Do you really want<br />to open this?</h2>
+          <p class="question-note">Pilih yang paling terasa benar untukmu.</p>
+          <div class="choice-row">
+            <button class="primary-button choice-button" data-choice="yes" type="button">
+              Yes, why not? <span aria-hidden="true">↗</span>
+            </button>
+            <button class="secondary-button choice-button" data-choice="no" type="button">
+              No, thank you
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene no-scene floral-page" id="no-scene" aria-labelledby="no-title" hidden>
+        <div class="goodbye-card">
+          <span class="tiny-star" aria-hidden="true">✦</span>
+          <p class="eyebrow">THAT'S ALRIGHT</p>
+          <h2 id="no-title">No problem, thank you<br />for opening this.</h2>
+          <p class="goodbye-copy">I hope you have a good day.</p>
+          <p class="signature">see you</p>
+        </div>
+      </section>
+
+      <section class="scene birthday-scene floral-page" id="birthday-scene" aria-labelledby="birthday-title" hidden>
+        <div class="birthday-content">
+          <p class="eyebrow"><span></span> TODAY IS YOUR DAY <span></span></p>
+          <p class="birthday-kicker">a little wish, just for you</p>
+          <h2 id="birthday-title">Happy Birthday,<br /><em>Delika Bangga A.</em></h2>
+          <div class="gold-divider"><span>✦</span></div>
+          <p class="song-label">A song for you</p>
+          <div class="music-card">
+            <img
+              class="music-art"
+              src="https://i.ibb.co.com/Psjry1tD/Screenshot-2026-11-17-083937.png"
+              alt="Logo lagu"
+            />
+            <div class="track-info">
+              <span class="track-title">Somebody To You</span>
+              <span class="track-artist">by The Vamps</span>
+            </div>
+            <button class="play-button" id="play-button" type="button" aria-label="Putar lagu">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </button>
+          </div>
+          <p class="play-status" id="play-status" aria-live="polite">
+            Putar lagunya, lalu kita lanjutkan.
+          </p>
+          <audio
+            id="birthday-audio"
+            preload="none"
+            src="assets/WhatsApp%20Video%202026-11-17%20at%208.36.39%20AM.wav"
+          ></audio>
+          <p class="scroll-hint" id="scroll-hint" hidden>suratmu menunggu di bawah <span>↓</span></p>
+        </div>
+      </section>
+
+      <section class="letters-scene" id="letters-scene" aria-labelledby="letters-title" hidden>
+        <div class="letters-heading">
+          <p class="eyebrow"><span></span> A FEW WORDS FROM ME <span></span></p>
+          <h2 id="letters-title">Untuk dikenang,<br /><em>dan disimpan baik-baik.</em></h2>
+        </div>
+        <div class="letters-gallery">
+          <div class="letters-stack">
+            <article class="aged-paper paper-one floral-page" id="paper-one">
+              <div class="paper-topline"><span>UNTUK DELIKA</span><span>SEBUAH SURAT</span></div>
+              <div class="paper-body">
+                <p>Rasanya agak aneh menulis ucapan seperti ini, mengingat dulu mungkin aku adalah salah satu orang yang ingin menjadi bagian dari hari spesialmu. Sekarang, keadaan sudah sedikit berbeda. Tapi, bukan berarti aku lupa bahwa hari ini adalah hari ketika seseorang yang pernah begitu berarti bagiku bertambah usia.</p>
+                <p>Aku cuma mau bilang terima kasih. Terima kasih karena pernah hadir dalam hidupku, terima kasih karena pernah membuat hari-hariku terasa lebih menyenangkan, dan terima kasih untuk semua cerita yang pernah kita lalui. Aku masih ingat hal-hal kecil tentang kita, percakapan sederhana, candaan yang mungkin tidak lucu bagi orang lain, sampai waktu-waktu yang rasanya ingin sekali kuulang. Ternyata, bahagia memang tidak selalu datang dari sesuatu yang besar. Terkadang, cukup dengan menghabiskan waktu bersama seseorang yang tepat, semuanya sudah terasa lebih dari cukup.</p>
+                <p>Jujur, aku tidak pernah menganggap pertemuan kita sebagai sesuatu yang sia-sia. Meskipun akhirnya tidak berjalan seperti yang mungkin pernah kita harapkan, aku tetap senang pernah mengenal kamu. Setidaknya, dari sekian banyak orang yang bisa saja kutemui, aku pernah dipertemukan dengan seseorang sepertimu. Seseorang yang pernah memberiku banyak alasan untuk tersenyum dan meninggalkan kenangan yang mungkin tidak akan mudah dilupakan.</p>
+                <p>Aku harap di umur yang sekarang, kamu bisa mendapatkan banyak hal yang selama ini kamu inginkan. Semoga apa pun yang sedang kamu perjuangkan bisa menemukan jalannya, semoga kamu selalu dikelilingi orang-orang baik, dan semoga kamu tidak pernah kehilangan alasan untuk bahagia. Kalau suatu hari keadaan terasa berat, semoga kamu selalu punya kekuatan untuk melewatinya.</p>
+                <p>Ada satu hal yang ingin aku sampaikan. Jangan pernah merasa bahwa cerita kita berakhir dengan sia-sia. Bagiku, sesuatu tidak harus berlangsung selamanya untuk bisa disebut indah. Ada pertemuan yang memang hanya diberi waktu sementara, tetapi kenangannya mampu tinggal jauh lebih lama. Mungkin kita memang tidak ditakdirkan untuk terus berjalan berdampingan, tetapi aku tidak ingin menghapus kenyataan bahwa pernah ada masa ketika aku begitu bahagia karena mengenal kamu.</p>
+                <p>Setelah ini, mungkin aku tidak akan lagi menjadi orang yang mengucapkan selamat ulang tahun kepadamu. Bukan karena aku membenci atau melupakanmu, melainkan karena aku juga perlu belajar menghargai jarak dan menerima bahwa beberapa hal memang cukup dikenang tanpa harus diulang kembali.</p>
+                <p>Sekali lagi, selamat bertambah usia, Delika. Terima kasih sudah pernah menjadi bagian dari cerita hidupku. Aku harap kamu bahagia, bukan hanya hari ini, tetapi juga di hari-hari berikutnya. Dan jika nanti kita mengingat masa lalu, semoga yang tersisa bukanlah penyesalan, melainkan senyum kecil karena kita pernah sebahagia itu.</p>
+                <p>Jaga diri baik-baik, ya. Semoga semesta selalu punya cara untuk membuatmu bahagia.</p>
+              </div>
+              <p class="paper-signature">dengan tulus,</p>
+            </article>
+
+            <article class="aged-paper paper-two floral-page" id="paper-two">
+              <div class="paper-topline"><span>SEDIKIT LAGI</span><span>UNTUKMU</span></div>
+              <div class="paper-body">
+                <p>Selamat ulang tahun, Delika.</p>
+                <p>Semoga di usiamu yang baru ini, banyak hal baik datang menghampirimu. Terima kasih karena pernah hadir dan menjadi bagian dari hari-hari paling membahagiakan dalam hidupku. Aku masih ingat betapa sederhananya bahagia ketika bersamamu, tentang tawa, cerita, dan hal-hal kecil yang ternyata begitu berarti.</p>
+                <p>Mungkin sekarang kita sudah berjalan ke arah masing-masing, tetapi aku tidak pernah menyesal pernah mengenalmu. Aku bersyukur pernah memiliki cerita seindah itu bersamamu.</p>
+                <p>Ada hal-hal yang memang tidak ditakdirkan untuk menetap, tetapi bukan berarti kehadirannya tak pantas dikenang. Barangkali kita hanyalah dua manusia yang dipertemukan untuk saling memberi warna, sebelum akhirnya belajar melanjutkan perjalanan masing-masing. Dan jika suatu hari kenangan tentang kita kembali singgah, aku ingin mengingatnya sebagai sesuatu yang pernah begitu indah, bukan sesuatu yang harus disesali.</p>
+                <p>Bahagia selalu, ya. Semoga kehidupan memperlakukanmu dengan baik. Mungkin ini menjadi ucapan terakhir dariku, tetapi aku harap kamu selalu menemukan alasan untuk tersenyum. Terima kasih untuk semua kenangan indahnya.</p>
+              </div>
+              <p class="paper-signature final-signature">bahagia selalu</p>
+              <p class="paper-signature sender-signature">-Someone you know</p>
+            </article>
+          </div>
+        </div>
+        <footer class="ending-note">Semoga hari-harimu selalu dipenuhi hal-hal baik <span>✦</span></footer>
+      </section>
+    </main>
+  </body>
+</html>
