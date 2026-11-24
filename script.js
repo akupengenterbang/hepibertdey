@@ -16,12 +16,12 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matc
 let choiceMade = false;
 
 const flowerPhotosByPage = {
-  "intro-scene": ["assets/photo-blue-bouquet.png", "assets/photo-blue-lily.png", "assets/photo-blue-roses.png", "assets/photo-blue-blossoms.png", "assets/photo-blue-flower.png"],
-  "question-scene": ["assets/photo-blue-lily.png", "assets/photo-blue-flower.png", "assets/photo-blue-bouquet.png", "assets/photo-blue-roses.png", "assets/photo-blue-blossoms.png"],
-  "no-scene": ["assets/photo-blue-roses.png", "assets/photo-blue-blossoms.png", "assets/photo-blue-lily.png", "assets/photo-blue-flower.png", "assets/photo-blue-bouquet.png"],
-  "birthday-scene": ["assets/photo-blue-blossoms.png", "assets/photo-blue-bouquet.png", "assets/photo-blue-flower.png", "assets/photo-blue-lily.png", "assets/photo-blue-roses.png"],
-  "paper-one": ["assets/photo-blue-flower.png", "assets/photo-blue-bouquet.png", "assets/photo-blue-roses.png", "assets/photo-blue-lily.png", "assets/photo-blue-blossoms.png"],
-  "paper-two": ["assets/photo-blue-lily.png", "assets/photo-blue-blossoms.png", "assets/photo-blue-bouquet.png", "assets/photo-blue-flower.png", "assets/photo-blue-roses.png"],
+  "intro-scene": ["assets/flowers/Bunga1.png", "assets/flowers/Bunga2.png", "assets/flowers/Bunga3.png", "assets/flowers/Bunga4.png"],
+  "question-scene": ["assets/flowers/Bunga6.png", "assets/flowers/Bunga7.png", "assets/flowers/Bunga8.png", "assets/flowers/Bunga9.png"],
+  "no-scene": ["assets/flowers/Bunga3.png", "assets/flowers/Bunga2.png", "assets/flowers/Bunga1.png", "assets/flowers/Bunga.png"],
+  "birthday-scene": ["assets/flowers/Bunga8.png", "assets/flowers/Bunga9.png", "assets/flowers/Bunga5.png", "assets/flowers/Bunga6.png"],
+  "paper-one": ["assets/flowers/Bunga2.png", "assets/flowers/Bunga4.png", "assets/flowers/Bunga6.png", "assets/flowers/Bunga8.png"],
+  "paper-two": ["assets/flowers/Bunga3.png", "assets/flowers/Bunga5.png", "assets/flowers/Bunga7.png", "assets/flowers/Bunga9.png"],
 };
 
 Object.entries(flowerPhotosByPage).forEach(([pageId, photos]) => {
