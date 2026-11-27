@@ -1,151 +1,165 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#101c35" />
-    <meta
-      name="description"
-      content="Sebuah surat kecil dan ucapan ulang tahun untuk Delika."
-    />
-    <title>For Delika — A little letter</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
 
-    <main>
-      <section class="scene intro-scene is-active floral-page" id="intro-scene" aria-labelledby="intro-title">
-        <div class="intro-copy">
-          <p class="eyebrow"><span></span> A LETTER FOR YOU <span></span></p>
-          <h1 id="intro-title">Sesuatu kecil,<br /><em>untuk hari ini.</em></h1>
-          <p class="intro-note">Ada surat yang sudah lama ingin kusampaikan.</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#101c35" />
+  <meta name="description" content="Sebuah surat kecil dan ucapan ulang tahun untuk Delika." />
+  <title>For Delika — A little letter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
 
-        <div class="envelope-wrap">
-          <div class="envelope" id="envelope">
-            <div class="envelope-back"></div>
-            <div class="letter-peek">
-              <span class="letter-mark">for you</span>
-              <span class="letter-lines"></span>
-              <span class="letter-lines short"></span>
-            </div>
-            <div class="envelope-front"></div>
-            <div class="envelope-flap"></div>
-            <div class="tear-seam" aria-hidden="true"></div>
-            <div class="seal" aria-hidden="true"></div>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main>
+    <section class="scene intro-scene is-active floral-page" id="intro-scene" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span></span> A LETTER FOR YOU <span></span></p>
+        <h1 id="intro-title">Sesuatu kecil,<br /><em>untuk hari ini.</em></h1>
+        <p class="intro-note">Ada surat yang sudah lama ingin kusampaikan.</p>
+      </div>
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-peek">
+            <span class="letter-mark">for you</span>
+            <span class="letter-lines"></span>
+            <span class="letter-lines short"></span>
           </div>
-          <button class="primary-button tear-button" id="tear-button" type="button">
-            <span>Robek suratnya</span><span class="button-arrow" aria-hidden="true">↗</span>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="tear-seam" aria-hidden="true"></div>
+          <div class="seal" aria-hidden="true"></div>
+        </div>
+        <button class="primary-button tear-button" id="tear-button" type="button">
+          <span>Robek suratnya</span><span class="button-arrow" aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="scene question-scene floral-page" id="question-scene" aria-labelledby="question-title" hidden>
+      <div class="question-card" id="question-card">
+        <span class="card-sparkle" aria-hidden="true">✦</span>
+        <p class="eyebrow">A LITTLE QUESTION</p>
+        <h2 id="question-title" tabindex="-1">Do you really want<br />to open this?</h2>
+        <p class="question-note">Pilih yang paling terasa benar untukmu.</p>
+        <div class="choice-row">
+          <button class="primary-button choice-button" data-choice="yes" type="button">
+            Yes, why not? <span aria-hidden="true">↗</span>
+          </button>
+          <button class="secondary-button choice-button" data-choice="no" type="button">
+            No, thank you
           </button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="scene question-scene floral-page" id="question-scene" aria-labelledby="question-title" hidden>
-        <div class="question-card" id="question-card">
-          <span class="card-sparkle" aria-hidden="true">✦</span>
-          <p class="eyebrow">A LITTLE QUESTION</p>
-          <h2 id="question-title" tabindex="-1">Do you really want<br />to open this?</h2>
-          <p class="question-note">Pilih yang paling terasa benar untukmu.</p>
-          <div class="choice-row">
-            <button class="primary-button choice-button" data-choice="yes" type="button">
-              Yes, why not? <span aria-hidden="true">↗</span>
-            </button>
-            <button class="secondary-button choice-button" data-choice="no" type="button">
-              No, thank you
-            </button>
+    <section class="scene no-scene floral-page" id="no-scene" aria-labelledby="no-title" hidden>
+      <div class="goodbye-card">
+        <span class="tiny-star" aria-hidden="true">✦</span>
+        <p class="eyebrow">THAT'S ALRIGHT</p>
+        <h2 id="no-title">No problem, thank you<br />for opening this.</h2>
+        <p class="goodbye-copy">I hope you have a good day.</p>
+        <p class="signature">see you</p>
+      </div>
+    </section>
+
+    <section class="scene birthday-scene floral-page" id="birthday-scene" aria-labelledby="birthday-title" hidden>
+      <div class="birthday-content">
+        <p class="eyebrow"><span></span> TODAY IS YOUR DAY <span></span></p>
+        <p class="birthday-kicker">a little wish, just for you</p>
+        <h2 id="birthday-title">Happy Birthday,<br /><em>Delika Bangga A.</em></h2>
+        <div class="gold-divider"><span>✦</span></div>
+        <p class="song-label">A little song for you</p>
+        <div class="music-card">
+          <img class="music-art" src="assets/plsdntcall.png" alt="Logo lagu" />
+          <div class="track-info">
+            <span class="track-title">Merry Christmas, Please Dont Call.</span>
+            <span class="track-artist">by Bleachers</span>
           </div>
+          <button class="play-button" id="play-button" type="button" aria-label="Putar lagu">
+            <span class="play-icon" aria-hidden="true">▶</span>
+          </button>
         </div>
-      </section>
+        <p class="play-status" id="play-status" aria-live="polite">
+          Putar lagunya, lalu kita lanjutkan.
+        </p>
+        <audio id="birthday-audio" preload="none"
+          src="assets/WhatsApp%20Audio%202026-11-21%20at%207.50.23%20PM.wav"></audio>
+        <p class="scroll-hint" id="scroll-hint" hidden>suratmu menunggu di bawah <span>↓</span></p>
+      </div>
+    </section>
 
-      <section class="scene no-scene floral-page" id="no-scene" aria-labelledby="no-title" hidden>
-        <div class="goodbye-card">
-          <span class="tiny-star" aria-hidden="true">✦</span>
-          <p class="eyebrow">THAT'S ALRIGHT</p>
-          <h2 id="no-title">No problem, thank you<br />for opening this.</h2>
-          <p class="goodbye-copy">I hope you have a good day.</p>
-          <p class="signature">see you</p>
-        </div>
-      </section>
-
-      <section class="scene birthday-scene floral-page" id="birthday-scene" aria-labelledby="birthday-title" hidden>
-        <div class="birthday-content">
-          <p class="eyebrow"><span></span> TODAY IS YOUR DAY <span></span></p>
-          <p class="birthday-kicker">a little wish, just for you</p>
-          <h2 id="birthday-title">Happy Birthday,<br /><em>Delika Bangga A.</em></h2>
-          <div class="gold-divider"><span>✦</span></div>
-          <p class="song-label">A little song for you</p>
-          <div class="music-card">
-            <img
-              class="music-art"
-              src="assets/plsdntcall.png"
-              alt="Logo lagu"
-            />
-            <div class="track-info">
-              <span class="track-title">Merry Christmas, Please Dont Call.</span>
-              <span class="track-artist">by Bleachers</span>
+    <section class="letters-scene" id="letters-scene" aria-labelledby="letters-title" hidden>
+      <div class="letters-heading">
+        <p class="eyebrow"><span></span> A FEW WORDS FROM ME <span></span></p>
+        <h2 id="letters-title">Untuk dikenang,<br /><em>dan disimpan baik-baik.</em></h2>
+      </div>
+      <div class="letters-gallery">
+        <div class="letters-stack">
+          <article class="aged-paper paper-one floral-page" id="paper-one">
+            <div class="paper-topline"><span>UNTUK DELIKA</span><span>SEBUAH SURAT</span></div>
+            <div class="paper-body">
+              <p>Hi Stranger!</p>
+              <p> ini mungkin agak aneh yaa buat kamuu, tiba tiba dapet ucapan wkwk. aku cuma mau bilang,
+                Selamat ulang tahun Delika. aku bikin ini buat ngucapin itu sama ngasih beberapa pesan terakhir dari
+                akuu, baca pelan pelan yaa.</p>
+              <p>Pertamaa aku mau bilang terima kasih atas hubungan kita selama ini, kamu itu first experience aku
+                bangett tauu, first fresh flower aku aku kasihh ke kamuu banyak lagii dehh yang bikin kamu tu sebagai
+                first experience akuu. aku juga ga nyesell kenal kamuu mungkin kamu yang nyesel kenal aku wkwk.</p>
+              <p>Teruss aku mau minta maaf atas semuaa kelakuan aku yang mungkin bikin kamu sakit hati, bete, kesel,
+                atau apapun ituu. karna aku juga ga bermaksud begituu tapi emang karakteristik aku begituu, sekali lagi
+                aku minta maaf yaa.</p>
+              <p>Ketigaa akuu mauu berterima kasih lagii, atas semua perlakuan kamu ke akuu, dan karna kamu berani buat
+                ngomong tentang perasaan kamu tentang kelakuan akuu, dan perkataan kamu yang bilang "aku gamau cewe yang
+                selanjutnya ngerasain gini juga" aku sadar, aku gabisa begini teruss, aku harus berubah. dan ya sekarang
+                aku udah perlahan berubahh mau itu dari segi pertemanan, perlakuan aku ke orang, atau karakteristik
+                akuu. tapii, sayangnya aku gabisa nunjukin ke kamu semua ituu, karna kita juga udah lostcontact kann.
+              </p>
+              <p>Terakhirr, aku senengg banget bisa kenal kamuu, aku harap kamu bisa selalu bahagia yaa di sma kamuu,
+                jangan terlalu dengerin kata orangg, dengerin kata mamah, jaga kesehatann, makan yang benerr yaa.</p>
+              <p>Mungkin setelah inii kita bener bener gaada apa apa lagii, ini hadiah terakhir aku buat kamuu, aku juga
+                udah bisa nerima, kadang ada hal yang tidak harus diulang lagi dan cukup dikenang dan dijadikan
+                pelajaran ajaa.</p>
+              <p>Sekali lagii, Selamat ulang tahun, Del. I hope u always have a great day, and i hope u will get as many
+                medals as you desire.</p>
+              <p>Jaga diri baik baikk yaa, goodluck on your lifee, im always here to support you.</p>
             </div>
-            <button class="play-button" id="play-button" type="button" aria-label="Putar lagu">
-              <span class="play-icon" aria-hidden="true">▶</span>
-            </button>
-          </div>
-          <p class="play-status" id="play-status" aria-live="polite">
-            Putar lagunya, lalu kita lanjutkan.
-          </p>
-          <audio
-            id="birthday-audio"
-            preload="none"
-            src="assets/WhatsApp%20Audio%202026-11-21%20at%207.50.23%20PM.wav"
-          ></audio>
-          <p class="scroll-hint" id="scroll-hint" hidden>suratmu menunggu di bawah <span>↓</span></p>
-        </div>
-      </section>
+          </article>
 
-      <section class="letters-scene" id="letters-scene" aria-labelledby="letters-title" hidden>
-        <div class="letters-heading">
-          <p class="eyebrow"><span></span> A FEW WORDS FROM ME <span></span></p>
-          <h2 id="letters-title">Untuk dikenang,<br /><em>dan disimpan baik-baik.</em></h2>
+          <article class="aged-paper paper-two floral-page" id="paper-two">
+            <div class="paper-topline"><span>SEDIKIT LAGI</span><span>UNTUKMU</span></div>
+            <div class="paper-body">
+              <p>Some last few word.</p>
+              <p>Semoga di usiamu yang baru ini, banyak hal hal baik yang dateng ke kamuu, mau itu kejuaraan, temen
+                temen, atau hal hal yang kamu sukaa.</p>
+              <p>Yang pasti, kita sekarang udah ngelangkah ke jalan kita masing masing, semoga kamu dapat apa yang
+                pantas kamu dapetin di hidup kamu yaa.</p>
+              <p>Kadang ada hal hal yang emang ga ditakdirkan bisa dilanjutkan dan harus diselesaikan, bukan berarti hal
+                itu ga pantas buat dikenang. mungkin kita hanya dua manusia yang dipertemukan untuk saling memberi
+                warna, sebelum akhirnya berpisah mengejar cita cita masing masing. dan kenangan ini, akan kuingat
+                sebagai hal bahagia, bukan sesuatu yang harus disesali.</p>
+              <p>I hope life treated u better than me, and i hope you always find your own path to your own happiness.
+                and thats all from me, see you in the next life, Stranger!</p>
+            </div>
+            <p class="paper-signature final-signature">Take care.</p>
+            <p class="paper-signature sender-signature">-Someone you know</p>
+          </article>
         </div>
-        <div class="letters-gallery">
-          <div class="letters-stack">
-            <article class="aged-paper paper-one floral-page" id="paper-one">
-              <div class="paper-topline"><span>UNTUK DELIKA</span><span>SEBUAH SURAT</span></div>
-              <div class="paper-body">
-                <p>Ini mungkin agak aneh yaa buat kamuu, tiba tiba dapet ucapan wkwk. aku cuma mau bilang, Selamat ulang tahun Delika. aku bikin ini buat ngucapin itu sama ngasih beberapa pesan terakhir dari akuu, baca pelan pelan yaa.</p>
-                <p>Pertamaa aku mau bilang terima kasih atas hubungan kita selama ini, kamu itu first experience aku bangett tauu, first fresh flower aku aku kasihh ke kamuu banyak lagii dehh yang bikin kamu tu sebagai first experience akuu. aku juga ga nyesell kenal kamuu mungkin kamu yang nyesel kenal aku wkwk.</p>
-                <p>Teruss aku mau minta maaf atas semuaa kelakuan aku yang mungkin bikin kamu sakit hati, bete, kesel, atau apapun ituu. karna aku juga ga bermaksud begituu tapi emang karakteristik aku begituu, sekali lagi aku minta maaf yaa.</p>
-                <p>Ketigaa akuu mauu berterima kasih lagii, atas semua perlakuan kamu ke akuu, dan karna kamu berani buat ngomong tentang perasaan kamu tentang kelakuan akuu, dan perkataan kamu yang bilang "aku gamau cewe yang selanjutnya ngerasain gini juga" aku sadar, aku gabisa begini teruss, aku harus berubah. dan ya sekarang aku udah perlahan berubahh mau itu dari segi pertemanan, perlakuan aku ke orang, atau karakteristik akuu. tapii, sayangnya aku gabisa nunjukin ke kamu semua ituu, karna kita juga udah lostcontact kann.</p>
-                <p>Terakhirr, aku senengg banget bisa kenal kamuu, aku harap kamu bisa selalu bahagia yaa di sma kamuu, jangan terlalu dengerin kata orangg, dengerin kata mamah, jaga kesehatann, makan yang benerr yaa.</p>
-                <p>Mungkin setelah inii kita bener bener gaada apa apa lagii, ini hadiah terakhir aku buat kamuu, aku juga udah bisa nerima, kadang ada hal yang tidak harus diulang lagi dan cukup dikenang dan dijadikan pelajaran ajaa.</p>
-                <p>Sekali lagii, Selamat ulang tahun, Del. I hope u always have a great day, and i hope u will get as many medals as you desire.</p>
-                <p>Jaga diri baik baikk yaa, goodluck on your lifee, im always here to support you.</p>
-              </div>
-            </article>
+      </div>
+      <footer class="ending-note">i<span>✦</span></footer>
+    </section>
+  </main>
+</body>
 
-            <article class="aged-paper paper-two floral-page" id="paper-two">
-              <div class="paper-topline"><span>SEDIKIT LAGI</span><span>UNTUKMU</span></div>
-              <div class="paper-body">
-                <p>Some last few word.</p>
-                <p>Semoga di usiamu yang baru ini, banyak hal hal baik yang dateng ke kamuu, mau itu kejuaraan, temen temen, atau hal hal yang kamu sukaa.</p>
-                <p>Yang pasti, kita sekarang udah ngelangkah ke jalan kita masing masing, semoga kamu dapat apa yang pantas kamu dapetin di hidup kamu yaa.</p>
-                <p>Kadang ada hal hal yang emang ga ditakdirkan bisa dilanjutkan dan harus diselesaikan, bukan berarti hal itu ga pantas buat dikenang. mungkin kita hanya dua manusia yang dipertemukan untuk saling memberi warna, sebelum akhirnya berpisah mengejar cita cita masing masing. dan kenangan ini, akan kuingat sebagai hal bahagia, bukan sesuatu yang harus disesali.</p>
-                <p>I hope ur life treated u better than me, and i hope you always find your own path to your own happiness. and thats all from me, see you in the next life.</p>
-              </div>
-              <p class="paper-signature final-signature">Take care.</p>
-              <p class="paper-signature sender-signature">-Someone you know</p>
-            </article>
-          </div>
-        </div>
-        <footer class="ending-note">i<span>✦</span></footer>
-      </section>
-    </main>
-  </body>
 </html>
